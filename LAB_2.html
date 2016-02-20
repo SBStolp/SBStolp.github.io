@@ -2,22 +2,23 @@
 <head>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
-	</head>
-	<style> 
+</head>
+<style> 
 	body{ background-color:yellow
 	};
-	</style>
-	<body
+</style>
+<body
 	<h><i><font size= "14" color="brown" >PHILADELPHIA ANIMAL RESCUE, SHELTER and CARE RESOURCE GUIDE</font></i></h>
 	<p>Animal Saver Mapping Application</p>
 	<div id='map'style="height:400px; width:600px"></div>
-	<script>
+<script>
 	// Initialize the map
 	var map = L.map('map').setView([40.002931,-75.2382967], 13);
 	// Load a tile layer
 	L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-		}).addTo(map);
+		
+	}).addTo(map);
 		 L.marker([39.952172, -75.143401]).addTo(map)
 		 .bindPopup("<b>P.A.W.S</b><br>Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901").openPopup();
 		 L.marker([39.944248, -75.162749]).addTo(map)
