@@ -1,10 +1,4 @@
 <html>
-$("textarea").keypress(function(event) {
-        if (event.keyCode == 13 && !event.shiftKey) {
-         submitForm(); //Submit your form here
-         return false;
-         }
-});	
 <head>
 	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
@@ -14,6 +8,18 @@ $("textarea").keypress(function(event) {
 	};
 </style>
 <body
+// Strip out all line breaks.
+var strSingleLineText = strMultiLineText.replace(
+    // Replace out the new line character.
+    new RegExp( "\\n", "g" ), 
+    
+    // Put in ... so we can see a visual representation of where
+    // the new line characters were replaced out.
+    " ... " 
+    );
+
+// Alert the new single-line text value.
+alert( strSingleLineText );
 	<h><i><font size= "14" color="#cc6600">PHILADELPHIA ANIMAL RESCUE, SHELTER and CARE RESOURCE GUIDE</font></i></h>
 	<center><p><font size= "4" color="#cc6600">Animal Saver Mapping Application</font></p></center
 	<div id='map'style="height:400px; width:600px"></div>
