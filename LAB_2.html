@@ -12,7 +12,7 @@
  
 	<h><i><font size= "14" color="#cc6600">PHILADELPHIA ANIMAL RESCUE, SHELTER and CARE RESOURCE GUIDE</font></i></h>
 	<center><p><font size= "4" color="#cc6600">Animal Saver Mapping Application</font></p></center>
-	<div id='map'style="height:800px; width:1200px"></div>
+	<div id='map'style="height:1000px; width:1400px"></div>
 	<script>
 	// Initialize the map
 	var map = L.map('map').setView([40.002931,-75.2382967], 13);
@@ -21,6 +21,7 @@
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		
 	}).addTo(map);
+	
 	L.marker([39.952172, -75.143401]).addTo(map).bindPopup("<b>P.A.W.S</b><br>Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901").openPopup();
 	L.marker([39.944248, -75.162749]).addTo(map).bindPopup("<b>Morris Animal Refuge</b><br>Address:1242 Lombard St,Philadelphia,PA 19147<br>Phone:(215)735-3256").openPopup();
 	L.marker([40.0146844,-75.1295983]).addTo(map).bindPopup("<b>Animal Care and Control Team</b><br>Address:111 W Hunting Park Ave,Philadelphia,PA 19140<br>Phone:(267)385-3800").openPopup();
