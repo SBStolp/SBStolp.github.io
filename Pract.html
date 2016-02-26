@@ -51,6 +51,17 @@
 	L.marker([39.9281211,-75.170693]).addTo(map).bindPopup("<b>Philadelphia Community Cats Council</b><br>Address: Everywhere Philadelphia<br>Phone:N/A<img src='http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg'>")
 	.openPopup();
 	
+	var popup = L.popup();
+
+function onMapClick(e) {
+    popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at " + e.latlng.toString())
+        .openOn(map);
+}
+
+map.on('click', onMapClick);
+	
 	</script>
 	
 </body>
