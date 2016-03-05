@@ -52,6 +52,19 @@
 	.openPopup();
 	
 	var popup = L.popup();
+	
+	var geojsonFeature = {
+    "type": "Feature",
+    "properties": {
+        "name": "Coors Field",
+        "amenity": "Baseball Stadium",
+        "popupContent": "This is where the Rockies play!"
+    },
+    "geometry": {
+        "type": "Point",
+        "coordinates": [39.912345,-75.001234]
+    }
+};
 
 function onMapClick(e) {
     popup
