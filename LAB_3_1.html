@@ -32,9 +32,23 @@
 	map.addLayer(layer);
 	var geojsonlayer = L.geoJson(geo, {onEachFeature: onEachFeature}).addTo(map);
 	
-	function onEachFeature(feature, layer) {
-        layer.bindPopup("<h1>"+feature.properties.P.A.W.S+"</h1><p>"+feature.properties.Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901+"</p>"+feature.properties.http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg);
-}
+	var myGeoJSON = {
+	‘type’ : ‘FeatureCollection’,
+	‘features’ : [
+		{'type':'Feature', 
+'properties':{
+'name':'P.A.W.S',
+‘caption’:'Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901',
+‘img’:’<img src=”http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg”/>’},
+'geometry':{'type':'Point','coordinates':[39.952172,-75.143401]}},
+{'type':'Feature',
+ 'properties':{
+'name':'Morris Animal Refuge',
+‘caption’:'Morris Animal Refuge'
+‘img’:’<img src=”https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png”/>’},
+'geometry':{'type':'Point','coordinates':[39.944248,-75.162749]}}
+
+	]};
 
 
 
