@@ -35,79 +35,42 @@
 	var myGeoJSON = {
 	‘type’ : ‘FeatureCollection’,
 	‘features’ : [
-		{'type':'Feature', 
-'properties':{
-'name':'P.A.W.S',
-‘caption’:'Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901',
-‘img’:’<img src=”http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg”/>’},
-'geometry':{'type':'Point','coordinates':[-75.143401,39.952172]}},
-{'type':'Feature',
- 'properties':{
-'name':'Morris Animal Refuge',
-‘caption’:'Morris Animal Refuge'
-‘img’:’<img src=”https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png”/>’},
-'geometry':{'type':'Point','coordinates':[-75.162749,39.944248]}},
-{'type':'Feature', 
-'properties':{
-'name':'Animal Care and Control Team',
-‘caption’:'Address:111 W Hunting Park Ave,Philadelphia,PA 19140<br>Phone(215)238-9901',
-‘img’:’<img src=”http://www.acctphilly.org/wp-content/uploads/2014/08/ACCT-Philly-cat-site-logo.png?936bb7”/>’},
-'geometry':{'type':'Point','coordinates':[-75.1295983,40.0146844]}},
-{'type':'Feature',
- 'properties':{
-'name':'SPCA',
-‘caption’:'Address:350 E Erie Ave,Philadelphia,PA 19134'
-‘img’:’<img src=”http://www.pspca.org/wp-content/uploads/2015/10/PSPCA-logo-150x97.png”/>’},
-'geometry':{'type':'Point','coordinates':[-75.121958,40.006482]}}
-	{'type':'Feature', 
-'properties':{
-'name':'PAWS Northeast',
-‘caption’:'Address:1810 Grant Ave, Philadelphia, PA 19115<br>Phone:(215)735-3256',
-‘img’:’<img src=”https://www.z2systems.com/neon/resource/phillypaws/images/PAWSLicensePlate_sm(2).jpg”/>’},
-'geometry':{'type':'Point','coordinates':[-75.0379953,40.084925]}},
-{'type':'Feature',
- 'properties':{
-'name':'Street Tails',
-‘caption’:'Address:1030 N 2nd St #401,Philadelphia,PA 19123<br>Phone:(267)761-9434'
-‘img’:’<img src=”http://1.bp.blogspot.com/_GXLa04GFe2w/Sp56BnbSQuI/AAAAAAAAAW8/_7JRHurLEyQ/s320/Street+Tails+Logo.jpg”/>’},
-'geometry':{'type':'Point','coordinates':[-75.1407965,39.9671142]}},
-{'type':'Feature', 
-'properties':{
-'name':'Saved Me',
-‘caption’:'Address:860-862 N 3rd St,Philadelphia,PA 19123<br>Phone:(215)735-3256',
-‘img’:’<img src=”http://savedme.org/wp-content/uploads/2014/11/savedmelogo.png”/>’},
-'geometry':{'type':'Point','coordinates':[-75.1429401,39.964937]}},
-{'type':'Feature',
- 'properties':{
-'name':'Philadelphia Greyhound Connection',
-‘caption’:'Address:2210 Murray St,Philadelphia,PA 19115<br>Phone:(215)676-7075'
-‘img’:’<img src=”http://i3.cpcache.com/product_zoom/355455426/pgc_logo_1_dog_tshirt.jpg?height=250&width=250&padToSquare=true”/>’},
-'geometry':{'type':'Point','coordinates':[-75.0284982,40.0824553]}}
-	{'type':'Feature', 
-'properties':{
-'name':'Doggie Style South Philly',
-‘caption’:'Address:1700 E Passyunk Ave,Philadelphia,PA 19148<br>Phone:(215)271-5200',
-‘img’:’<img src=”http://www.trademarkia.com/logo-images/kh-investors/doggie-style-77801224.jpg”/>’},
-'geometry':{'type':'Point','coordinates':[-75.1653143,39.9286594]}},
-{'type':'Feature',
- 'properties':{
-'name':'Red Paw',
-‘caption’:'Address:1328 S 24th St,Philadelphia,PA 19146<br>Phone:(267)289-2729'
-‘img’:’<img src=”http://southofsouth.org/sites/southofsouth.org/files/imagecache/250px_thumb/RedPaw_logo.JPG”/>’},
-'geometry':{'type':'Point','coordinates':[-75.1848181,39.9355916]}},
-{'type':'Feature', 
-'properties':{
-'name':'Philadelphia Community Cats Council',
-‘caption’:'Address: Everywhere Philadelphia<br>Phone:N/A',
-‘img’:’<img src=”http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg”/>’},
-'geometry':{'type':'Point','coordinates':[-75.170693,39.9281211]}},
+	{'type':'Feature', 'properties':{'name':'P.A.W.S',‘caption’:'Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901',
+		‘img’:’<img src=”http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.143401,39.952172]}},
+	{'type':'Feature','properties':{'name':'Morris Animal Refuge',‘caption’:'Morris Animal Refuge'
+		‘img’:’<img src=”https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.162749,39.944248]}},
+	{'type':'Feature', 'properties':{'name':'Animal Care and Control Team',‘caption’:'Address:111 W Hunting Park Ave,Philadelphia,PA 19140<br>Phone(215)238-9901',
+		‘img’:’<img src=”http://www.acctphilly.org/wp-content/uploads/2014/08/ACCT-Philly-cat-site-logo.png?936bb7”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.1295983,40.0146844]}},
+	{'type':'Feature','properties':{'name':'SPCA',‘caption’:'Address:350 E Erie Ave,Philadelphia,PA 19134'
+		‘img’:’<img src=”http://www.pspca.org/wp-content/uploads/2015/10/PSPCA-logo-150x97.png”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.121958,40.006482]}}
+	{'type':'Feature', 'properties':{'name':'PAWS Northeast',‘caption’:'Address:1810 Grant Ave, Philadelphia, PA 19115<br>Phone:(215)735-3256',
+		‘img’:’<img src=”https://www.z2systems.com/neon/resource/phillypaws/images/PAWSLicensePlate_sm(2).jpg”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.0379953,40.084925]}},
+	{'type':'Feature','properties':{'name':'Street Tails',‘caption’:'Address:1030 N 2nd St #401,Philadelphia,PA 19123<br>Phone:(267)761-9434'
+		‘img’:’<img src=”http://1.bp.blogspot.com/_GXLa04GFe2w/Sp56BnbSQuI/AAAAAAAAAW8/_7JRHurLEyQ/s320/Street+Tails+Logo.jpg”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.1407965,39.9671142]}},
+	{'type':'Feature', 'properties':{'name':'Saved Me',‘caption’:'Address:860-862 N 3rd St,Philadelphia,PA 19123<br>Phone:(215)735-3256',
+		‘img’:’<img src=”http://savedme.org/wp-content/uploads/2014/11/savedmelogo.png”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.1429401,39.964937]}},
+	{'type':'Feature','properties':{'name':'Philadelphia Greyhound Connection',‘caption’:'Address:2210 Murray St,Philadelphia,PA 19115<br>Phone:(215)676-7075'
+		‘img’:’<img src=”http://i3.cpcache.com/product_zoom/355455426/pgc_logo_1_dog_tshirt.jpg?height=250&width=250&padToSquare=true”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.0284982,40.0824553]}}
+	{'type':'Feature', 'properties':{'name':'Doggie Style South Philly',‘caption’:'Address:1700 E Passyunk Ave,Philadelphia,PA 19148<br>Phone:(215)271-5200',
+		‘img’:’<img src=”http://www.trademarkia.com/logo-images/kh-investors/doggie-style-77801224.jpg”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.1653143,39.9286594]}},
+	{'type':'Feature','properties':{'name':'Red Paw',‘caption’:'Address:1328 S 24th St,Philadelphia,PA 19146<br>Phone:(267)289-2729'
+		‘img’:’<img src=”http://southofsouth.org/sites/southofsouth.org/files/imagecache/250px_thumb/RedPaw_logo.JPG”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.1848181,39.9355916]}},
+	{'type':'Feature', 'properties':{'name':'Philadelphia Community Cats Council',‘caption’:'Address: Everywhere Philadelphia<br>Phone:N/A',
+		‘img’:’<img src=”http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg”/>’},
+		'geometry':{'type':'Point','coordinates':[-75.170693,39.9281211]}},
 	]};
 
-
-
-       
-	
-	</script>
+ 	</script>
 	
 </body>
 </html>
