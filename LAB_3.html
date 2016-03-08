@@ -16,23 +16,13 @@
 
 
 	<script>
-var map;
-function init(){
-  // initiate leaflet map
-  map = new L.Map('cartodb-map', {
-    center: [40.0146844,-75.1295983],
-    zoom: 2
-  })
+var MapQuestOpen_Aerial = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{type}/{z}/{x}/{y}.{ext}', {
+	type: 'sat',
+	ext: 'jpg',
+	attribution: 'Tiles Courtesy of <a href="http://www.mapquest.com/">MapQuest</a> &mdash; Portions Courtesy NASA/JPL-Caltech and U.S. Depart. of Agriculture, Farm Service Agency',
+	subdomains: '1234'
+});
 
-  var layerUrl = 'http://documentation.cartodb.com/api/v2/viz/836e37ca-085a-11e4-8834-0edbca4b5057/viz.json';
-
-  cartodb.createLayer(map, layerUrl)
-    .addTo(map)
-    .on('done', function(layer) {
-
-    }).on('error', function() {
-      //log the error
-    });
     L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
   attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
 }).addTo(map);
