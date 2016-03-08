@@ -1,0 +1,68 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	
+</head>
+<style> 
+	body{ background-color:#D2691E
+	};
+</style>
+        <body>
+ 
+	<h><i><font size= "14" color="white">PHILADELPHIA ANIMAL RESCUE, SHELTER and CARE RESOURCE GUIDE</font></i></h>
+	<center><p><font size= "5" color="white">Animal Saver Resources Near You</font></p></center>
+	<center><div id='map'style="height:900px; width:650px; border: 2.5px solid #000000;"></div></center>
+
+
+	<script>
+	var Stamen_Watercolor = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 1,
+	maxZoom: 16,
+	ext: 'png'
+});
+// https: also suppported.
+var Stamen_TonerLabels = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-labels/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 20,
+	ext: 'png'
+});
+
+var map = L.map('map', {
+  scrollWheelZoom: true,
+  center: [40.0077317,-75.103069],
+  zoom: 12
+});
+map.addLayer(layer);
+	
+        L.marker([39.952172,-75.143401]).addTo(map).bindPopup("<b>P.A.W.S</b><br>Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg'>")
+        .openPopup();
+        L.marker([39.944248,-75.162749]).addTo(map).bindPopup("<b>Morris Animal Refuge</b><br>Address:1242 Lombard St,Philadelphia,PA 19147<br>Phone:(215)735-3256<img src='https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png'>")
+        .openPopup();
+	L.marker([40.0146844,-75.1295983]).addTo(map).bindPopup("<b>Animal Care and Control Team</b><br>Address:111 W Hunting Park Ave,Philadelphia,PA 19140<br>Phone:(267)385-3800<img src='http://www.acctphilly.org/wp-content/uploads/2014/08/ACCT-Philly-cat-site-logo.png?936bb7'>")
+	.openPopup();
+	L.marker([40.006482, -75.121958]).addTo(map).bindPopup("<b>SPCA</b><br>Address:350 E Erie Ave,Philadelphia,PA 19134<br>Phone:(215)426-6300<img src='http://www.pspca.org/wp-content/uploads/2015/10/PSPCA-logo-150x97.png'>")
+	.openPopup();
+	L.marker([40.084925,-75.0379953]).addTo(map).bindPopup("<b>PAWS Northeast</b><br>Address:1810 Grant Ave, Philadelphia, PA 19115<br>Phone:(215)735-3256<img src='https://www.z2systems.com/neon/resource/phillypaws/images/PAWSLicensePlate_sm(2).jpg'>")
+	.openPopup();
+	L.marker([39.9671142,-75.1407965]).addTo(map).bindPopup("<b>Street Tails</b><br>Address:1030 N 2nd St #401,Philadelphia,PA 19123<br>Phone:(267)761-9434<img src='http://1.bp.blogspot.com/_GXLa04GFe2w/Sp56BnbSQuI/AAAAAAAAAW8/_7JRHurLEyQ/s320/Street+Tails+Logo.jpg'>")
+	.openPopup();
+	L.marker([39.964937,-75.1429401]).addTo(map).bindPopup("<b>Saved Me</b><br>Address:860-862 N 3rd St,Philadelphia,PA 19123<br>Phone:(215)735-3256<img src='http://savedme.org/wp-content/uploads/2014/11/savedmelogo.png'>")
+	.openPopup();
+	L.marker([40.0824553,-75.0284982]).addTo(map).bindPopup("<b>Philadelphia Greyhound Connection</b><br>Address:2210 Murray St,Philadelphia,PA 19115<br>Phone:(215)676-7075<img src='http://i3.cpcache.com/product_zoom/355455426/pgc_logo_1_dog_tshirt.jpg?height=250&width=250&padToSquare=true'>")
+	.openPopup();
+	L.marker([39.9286594,-75.1653143]).addTo(map).bindPopup("<b>Doggie Style South Philly</b><br>Address:1700 E Passyunk Ave,Philadelphia,PA 19148<br>Phone:(215) 271-5200<img src='http://www.trademarkia.com/logo-images/kh-investors/doggie-style-77801224.jpg'>")
+	.openPopup();
+	L.marker([39.9355916,-75.1848181]).addTo(map).bindPopup("<b>Red Paw</b><br>Address:1328 S 24th St,Philadelphia,PA 19146<br>Phone:(267)289-2729<img src='http://southofsouth.org/sites/southofsouth.org/files/imagecache/250px_thumb/RedPaw_logo.JPG'>")
+	.openPopup();
+	L.marker([39.9281211,-75.170693]).addTo(map).bindPopup("<b>Philadelphia Community Cats Council</b><br>Address: Everywhere Philadelphia<br>Phone:N/A<img src='http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg'>")
+	.openPopup();
+	
+	</script>
+	
+</body>
+</html>
