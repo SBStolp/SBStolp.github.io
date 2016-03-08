@@ -1,7 +1,7 @@
 <html>
 <head>
-<link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
-<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+ <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 	
 </head>
 <style> 
@@ -23,9 +23,14 @@ var MapQuestOpen_Aerial = L.tileLayer('http://otile{s}.mqcdn.com/tiles/1.0.0/{ty
 	subdomains: '1234'
 });
 
-    L.tileLayer('https://dnv9my2eseobd.cloudfront.net/v3/cartodb.map-4xtxp73f/{z}/{x}/{y}.png', {
-  attribution: 'Mapbox <a href="http://mapbox.com/about/maps" target="_blank">Terms &amp; Feedback</a>'
-}).addTo(map);
+   var Stamen_TonerHybrid = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner-hybrid/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 20,
+	ext: 'png'
+});
+
         L.marker([39.952172,-75.143401]).addTo(map).bindPopup("<b>P.A.W.S</b><br>Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg'>")
         .openPopup();
         L.marker([39.944248,-75.162749]).addTo(map).bindPopup("<b>Morris Animal Refuge</b><br>Address:1242 Lombard St,Philadelphia,PA 19147<br>Phone:(215)735-3256<img src='https://media.licdn.com/mpr/mpr/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png'>")
