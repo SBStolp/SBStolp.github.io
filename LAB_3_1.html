@@ -18,7 +18,7 @@
 
 
 	<script>
-var map = L.map('map').setView([40.0077317,-75.103069], 12);
+	var map = L.map('map').setView([40.0077317,-75.103069], 12);
 
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpandmbXliNDBjZWd2M2x6bDk3c2ZtOTkifQ._QA7i5Mpkd_m30IGElHziw', {
 			maxZoom: 18,
@@ -29,7 +29,13 @@ var map = L.map('map').setView([40.0077317,-75.103069], 12);
 		}).addTo(map);
 
 
-map.addLayer(layer);
+	map.addLayer(layer);
+	var geojsonlayer = L.geoJson(geo, {onEachFeature: onEachFeature}).addTo(map);
+	
+	function onEachFeature(feature, layer) {
+        layer.bindPopup("<h1>"+feature.properties.P.A.W.S+"</h1><p>"+feature.properties.Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901+"</p>"+feature.properties.http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg);
+}
+
 
 
         L.marker([39.952172,-75.143401]).addTo(map).bindPopup("<b>P.A.W.S</b><br>Address:100 N 2nd St,Philadelphia PA,19106<br>Phone(215)238-9901<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg'>")
