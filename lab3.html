@@ -30,19 +30,17 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
-  geojson.addTo(map);       
-        //load geojson from external file
+        geojson.addTo(map);
         $.getjson('LAB_3.json', function(data) {
                 var geojson = L.geoJson(data, {
                   onEachFeature: function (feature, layer) {
                           layer.bindPopup(feature.properties.NAME + '<br />'
                                                         + feature.properties.ADDRESS);
-                  
-               });
+                  }
                 });
         
        
-    
+        });
 </script>
 
 </body>
