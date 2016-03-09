@@ -34,16 +34,18 @@
 	map.addLayer(layer);
 	
 	
-	var myGeoJSON = {
-	"type": "Feature",
-  "geometry": {
-    "type": "Point",
-    "coordinates": [39.952172,-75.143401]
-  },
-  "properties": {
-    "name": "P.A.W.S"
-  }
-}
+	{
+       "type": "FeatureCollection",
+       "features": [{
+           "type": "Feature",
+           "geometry": {
+               "type": "Point",
+               "coordinates": [39.952172,-75.143401]
+           },
+           "properties": {
+               "prop0": "value0"
+           }
+       },
 	
 	
  	</script>
