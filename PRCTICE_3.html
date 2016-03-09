@@ -36,7 +36,7 @@
 var myLayer = L.geoJson().addTo(map);
 	myLayer.addData(geojsonFeature);
 
-{
+var Pet= {
   "type": "FeatureCollection",
   "features": [
     {
@@ -52,6 +52,7 @@ var myLayer = L.geoJson().addTo(map);
     }
   ]
 }
+new L.GeoJSON(Pet).addTo(map);
 	</script>
 	
 </body>
