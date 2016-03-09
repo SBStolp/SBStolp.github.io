@@ -1,0 +1,207 @@
+{
+  "displayFieldName" : "",
+  "fieldAliases" : {
+    "FID" : "FID",
+    "Name" : "Name",
+    "Address" : "Address",
+    "Long" : "Long",
+    "Lat" : "Lat",
+    "Thumb_URL" : "Thumb_URL"
+  },
+  "geometryType" : "esriGeometryPoint",
+  "spatialReference" : {
+    "wkid" : 4326,
+    "latestWkid" : 4326
+  },
+  "fields" : [
+    {
+      "name" : "FID",
+      "type" : "esriFieldTypeOID",
+      "alias" : "FID"
+    },
+    {
+      "name" : "Name",
+      "type" : "esriFieldTypeString",
+      "alias" : "Name",
+      "length" : 254
+    },
+    {
+      "name" : "Address",
+      "type" : "esriFieldTypeString",
+      "alias" : "Address",
+      "length" : 254
+    },
+    {
+      "name" : "Long",
+      "type" : "esriFieldTypeDouble",
+      "alias" : "Long"
+    },
+    {
+      "name" : "Lat",
+      "type" : "esriFieldTypeDouble",
+      "alias" : "Lat"
+    },
+    {
+      "name" : "Thumb_URL",
+      "type" : "esriFieldTypeString",
+      "alias" : "Thumb_URL",
+      "length" : 254
+    }
+  ],
+  "features" : [
+    {
+      "attributes" : {
+        "FID" : 0,
+        "Name" : "Philadelphia Animal Welfare Society (PAWS)",
+        "Address" : "100 N 2nd St,Phila. Pa 19106",
+        "Long" : -75.143401999999995,
+        "Lat" : 39.952089999999998,
+        "Thumb_URL" : "http://phillypaws.org/wp-content/\nthemes/PhillyPAWS-2014/img/1.png"
+      },
+      "geometry" : {
+        "x" : -75.143401999999995,
+        "y" : 39.952089999999998
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 1,
+        "Name" : "Morris Animal Refuge",
+        "Address" : "1242 Lombard St,Philadelphia,PA 19147",
+        "Long" : -75.162762000000001,
+        "Lat" : 39.944248000000002,
+        "Thumb_URL" : "https://media.licdn.com/mpr/mpr\n/shrink_200_200/AAEAAQAAAAAAAAReAAAAJDg3ZTYzYTY0LTM3MTMtNGRjYy1hNDkzLWVjMzA1M2FjYzM5Zg.png"
+      },
+      "geometry" : {
+        "x" : -75.162762000000001,
+        "y" : 39.944248000000002
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 2,
+        "Name" : "Animal Care & Control Team",
+        "Address" : "111 W Hunting Park Ave,Philadelphia,PA 19140",
+        "Long" : -75.127409999999998,
+        "Lat" : 40.014679999999998,
+        "Thumb_URL" : "http://www.acctphilly.org/wp-content/\nuploads/2014/08/ACCT-Philly-cat-site-logo.png?936bb7"
+      },
+      "geometry" : {
+        "x" : -75.127409999999998,
+        "y" : 40.014679999999998
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 3,
+        "Name" : "SPCA",
+        "Address" : "350 E Erie Ave,Philadelphia,PA 19134",
+        "Long" : -75.121454,
+        "Lat" : 40.006430999999999,
+        "Thumb_URL" : "http://www.petravelr.\ncom/wp-content/uploads/2015/05/P-SPCA-logo.jpg"
+      },
+      "geometry" : {
+        "x" : -75.121454,
+        "y" : 40.006430999999999
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 4,
+        "Name" : "PAWS Northeast \nAdoption Center",
+        "Address" : "1810 Grant Ave, Philadelphia, PA 19115",
+        "Long" : -75.036901,
+        "Lat" : 40.084921999999999,
+        "Thumb_URL" : "https://pawsitivityphilly.files.wordpress.com/2013/12/cropped-paws12.jpg"
+      },
+      "geometry" : {
+        "x" : -75.036901,
+        "y" : 40.084921999999999
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 5,
+        "Name" : "Street Tails",
+        "Address" : "1030 N 2nd St #401,Philadelphia,PA 19123",
+        "Long" : -75.140252000000004,
+        "Lat" : 39.967106999999999,
+        "Thumb_URL" : "http://1.bp.blogspot.com/_GXLa04GFe2w/\nSp56BnbSQuI/AAAAAAAAAW8/\n_7JRHurLEyQ/s320/Street+Tails+Logo.jpg"
+      },
+      "geometry" : {
+        "x" : -75.140252000000004,
+        "y" : 39.967106999999999
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 6,
+        "Name" : "Saved Me",
+        "Address" : "860-862 N 3rd St,Philadelphia,PA 19123",
+        "Long" : -75.142673000000002,
+        "Lat" : 39.964939000000001,
+        "Thumb_URL" : "http://savedme.org/wp-content/uploads/2014/11/savedmelogo.png"
+      },
+      "geometry" : {
+        "x" : -75.142673000000002,
+        "y" : 39.964939000000001
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 7,
+        "Name" : "Philadelphia Greyhound Connection",
+        "Address" : "2210 Murray St,Philadelphia,PA 19115",
+        "Long" : -75.028222,
+        "Lat" : 40.082459999999998,
+        "Thumb_URL" : "http://i3.cpcache.com/product_zoom/\n355455426/pgc_logo_1_dog_tshirt.jpg?\nheight=250&width=250&padToSquare=true"
+      },
+      "geometry" : {
+        "x" : -75.028222,
+        "y" : 40.082459999999998
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 8,
+        "Name" : "Doggie Style\n(South Philly)",
+        "Address" : "1700 E Passyunk Ave,Philadelphia,PA 19148",
+        "Long" : -75.165227999999999,
+        "Lat" : 39.928686999999996,
+        "Thumb_URL" : "http://www.trademarkia.com/\nlogo-images/kh-investors/\ndoggie-style-77801224.jpg"
+      },
+      "geometry" : {
+        "x" : -75.165227999999999,
+        "y" : 39.928686999999996
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 9,
+        "Name" : "Red Paw Emergency \nRelief Team",
+        "Address" : "1328 S 24th St,Philadelphia,PA 19146",
+        "Long" : -75.184279000000004,
+        "Lat" : 39.935586999999998,
+        "Thumb_URL" : "http://philly.happeningmag.com/wp-content/\nuploads/2012/06/Red-PAw-logo.jpg"
+      },
+      "geometry" : {
+        "x" : -75.184279000000004,
+        "y" : 39.935586999999998
+      }
+    },
+    {
+      "attributes" : {
+        "FID" : 10,
+        "Name" : "Philadelphia Community Cats Council (Location: Everywhere Philadelphia)",
+        "Address" : " ",
+        "Long" : -75.169674000000001,
+        "Lat" : 39.92718,
+        "Thumb_URL" : "http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg"
+      },
+      "geometry" : {
+        "x" : -75.169674000000001,
+        "y" : 39.92718
+      }
+    }
+  ]
+}
