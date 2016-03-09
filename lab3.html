@@ -19,7 +19,7 @@
                 'http://{s}.tiles.mapbox.com/v3/sarasafavi.hjegnofh/{z}/{x}/{y}.png',
                                   {     maxZoom: 18     });
 
-        $.getJSON('libraries.json', function(data) {
+        $.getJSON('LAB_3.json', function(data) {
                 var geojson = L.geoJson(data, {
                   onEachFeature: function (feature, layer) {
                           layer.bindPopup(feature.properties.NAME + '<br />'
