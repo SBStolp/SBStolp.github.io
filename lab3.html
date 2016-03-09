@@ -21,7 +21,7 @@
 
 <div id="map"></div>
         <script type ="text/javascript">
-       var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+       var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'
 });
 var map = L.map('map', {
@@ -31,7 +31,7 @@ var map = L.map('map', {
 });
  basemap.addTo(map);
         geojson.addTo(map);
-        $.getJSON('LAB_3.json', function(data) {
+        $.getjson('LAB_3.json', function(data) {
                 var geojson = L.geoJson(data, {
                   onEachFeature: function (feature, layer) {
                           layer.bindPopup(feature.properties.NAME + '<br />'
