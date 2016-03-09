@@ -18,6 +18,8 @@
 
 	<script src="sample-geojson.js" type="text/javascript"></script>
 	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+	var myLayer = L.geoJson().addTo(map);
+	myLayer.addData(geojsonFeature);
 
 
 
@@ -32,8 +34,6 @@
 			id: 'mapbox.light'
 		}).addTo(map);
 	map.addLayer(layer);
-	var myLayer = L.geoJson().addTo(map);
-	myLayer.addData(geojsonFeature);
 
 		var geojsonFeature = { 
 "type": "Feature", 
