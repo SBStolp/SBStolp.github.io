@@ -25,6 +25,7 @@
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
   
 });
+var geojsonLayer = new L.geojson()
  
 var map = L.map('map', {
   scrollWheelZoom: true,
@@ -32,7 +33,7 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
- var geojsonLayer = new L.geojson()
+ 
  var geojsonFeature = {
  	"type":"Feature",
  	"properties": {
