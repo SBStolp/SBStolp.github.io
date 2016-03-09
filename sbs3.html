@@ -30,17 +30,21 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
- geojson.addTo(map);
-        $.getjson('geojson.geojson', function(data) {
-                var geojson = L.geojson(data, {
-                  onEachFeature: function (feature, layer) {
-                          layer.bindPopup(feature.properties.NAME + '<br />'
-                                                        + feature.properties.ADDRESS);
-                  }
-               
-                });
-               
-	});
+ var myLayer = L.geoJson().addTo(map);
+ var geoJsonFeature = {
+ 	"type":"Feature",
+ 	"properties": {
+ 		"Name": "P.A.W.S",
+ 		"Address": "100 N 2nd St,Philadelphia PA,19106",
+ 		"popupContent": "<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg'>"
+ 	},
+ 	"geometry": {
+ 		"type" : "Point",
+ 		"coordinates" : [39.952172,-75.143401]
+ 	}
+ 	};
+ }
+        
 </script>
 
 </body>
