@@ -36,18 +36,22 @@
 var myLayer = L.geoJson().addTo(map);
 	myLayer.addData(geojsonFeature);
 
-		var geojsonFeature = { 
-"type": "Feature", 
-"properties": { 
-"name": "P.A.W.S", 
-"amenity": "Rescue", 
-"popupContent": "Rescue ME"
-}, 
-"geometry": { 
-"type": "Point", 
-"coordinates": [-75.143401,39.952172] 
-} 
-};
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.16984105110168,
+          39.927189033682396
+        ]
+      }
+    }
+  ]
+}
 	</script>
 	
 </body>
