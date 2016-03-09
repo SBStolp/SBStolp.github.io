@@ -30,6 +30,7 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
+ geojson.addTo(map);
         $.getjson('geojson.geojson', function(data) {
                 var geojson = L.geojson(data, {
                   onEachFeature: function (feature, layer) {
@@ -39,9 +40,7 @@ var map = L.map('map', {
                
                 });
                
-		geojson.addTo(map);
-        	
-        });
+	});
 </script>
 
 </body>
