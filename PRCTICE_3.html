@@ -34,13 +34,15 @@
 			id: 'mapbox.light'
 		}).addTo(map);
 	map.addLayer(layer);
+var myLayer = L.geoJson().addTo(map);
+	myLayer.addData(geojsonFeature);
 
 		var geojsonFeature = { 
 "type": "Feature", 
 "properties": { 
 "name": "P.A.W.S", 
 "amenity": "Rescue", 
-"popupContent": “<img src=”http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg”/>" 
+"popupContent": “oo" 
 }, 
 "geometry": { 
 "type": "Point", 
