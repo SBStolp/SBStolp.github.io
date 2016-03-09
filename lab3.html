@@ -29,7 +29,8 @@ var map = L.map('map', {
   center: [-75.103069,40.0077317],
   zoom: 12
 });
-
+ basemap.addTo(map);
+        geojson.addTo(map);
         $.getJSON('LAB_3.json', function(data) {
                 var geojson = L.geoJson(data, {
                   onEachFeature: function (feature, layer) {
@@ -38,8 +39,7 @@ var map = L.map('map', {
                   }
                 });
         
-        basemap.addTo(map);
-        geojson.addTo(map);
+       
         });
 </script>
 
