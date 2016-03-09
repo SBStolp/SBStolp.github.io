@@ -18,9 +18,9 @@
    <h><i><font size= "14" color="white">PHILADELPHIA ANIMAL RESCUE, SHELTER and CARE RESOURCE GUIDE</font></i></h>
 	<center><p><font size= "5" color="white">Animal Saver Resources Near You</font></p></center>
 	<center><div id="map" style="width: 1000px; height: 400px"></div></center>
-
-<div id="map"></div>
-        <script type ="text/javascript">
+	<div id="map"></div>
+	
+        <script>
        var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
   
@@ -33,7 +33,6 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
- var geojsonLayer = new L.geojson()
  
  var geojsonFeature = {
  	"type":"Feature",
@@ -43,8 +42,8 @@ var map = L.map('map', {
  		"popupContent": "<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg'>"
  	},
  	"geometry": {
- 		"type" : "Point",
- 		"coordinates" : [39.952172,-75.143401]
+ 		"type": "Point",
+ 		"coordinates": [-75.143401,39.952172]
  	}
  	};
  	geojsonLayer.addData(geojsonFeature);
