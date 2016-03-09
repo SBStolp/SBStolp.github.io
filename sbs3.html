@@ -23,7 +23,7 @@
         <script type ="text/javascript">
        var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
-  var geojsonLayer = new L.GeoJSON()
+  
 });
  
 var map = L.map('map', {
@@ -32,7 +32,7 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
- 
+ var geojsonLayer = new L.GeoJSON()
  var geojsonFeature = {
  	"type":"Feature",
  	"properties": {
