@@ -32,7 +32,7 @@ var map = L.map('map', {
  basemap.addTo(map);
         geojson.addTo(map);
         $.getjson('LAB_3.json', function(data) {
-                var geojson = L.geoJson(data, {
+                var geojson = L.geojson(data, {
                   onEachFeature: function (feature, layer) {
                           layer.bindPopup(feature.properties.NAME + '<br />'
                                                         + feature.properties.ADDRESS);
