@@ -4,7 +4,7 @@
    <title>Philadelphia Pet Saver Mapping App</title>
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" />
         <script src="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.js"></script>
-        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      
         <style>
         body
         { background-color:#D2691E
@@ -31,6 +31,7 @@ var map = L.map('map', {
 });
  basemap.addTo(map);
  var myLayer = L.geoJson().addTo(map);
+ myLayer.addData(geojsonFeature);
  var geoJsonFeature = {
  	"type":"Feature",
  	"properties": {
@@ -43,7 +44,7 @@ var map = L.map('map', {
  		"coordinates" : [39.952172,-75.143401]
  	}
  	};
- 	myLayer.addData(geojsonFeature);
+ 	
         
 </script>
 
