@@ -33,6 +33,12 @@ var map = L.map('map', {
 })
 map.addLayer(layer);
 
+function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties."Name") {
+        layer.bindPopup(feature.properties."url");
+    }
+}
+
 var geoJsonFeature = {
 	"type": "FeatureCollection",
   "features": [
