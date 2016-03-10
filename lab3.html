@@ -4,7 +4,7 @@
     
     <title>Philadelphia Pet Saver Mapping App</title>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   
   </head>
 
@@ -194,11 +194,11 @@ function onEachFeature(feature, layer) {
  		     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'});
  
 		var map = L.map('map', {
-			maxZoom: 16,
+			maxZoom: 15,
 			minZoom: 10,
 			maxBounds: [
-				[39.88, -75.24],
-				[40.04, -75.08]
+				[39, -75.2],
+				[40, -75.1]
 				]
 		}
 		)
