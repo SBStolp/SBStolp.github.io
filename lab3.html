@@ -32,12 +32,14 @@ var map = L.map('map', {
   zoom: 12,
 })
 map.addLayer(layer);
- 
- 
 
-	var geoJsonFeature = L.geoJson().addTo(map)[
-  {
- "type": "FeatureCollection",
+function onEachFeature(feature, layer) {
+        if (feature.properties && feature.properties.Name) {
+        layer.bindPopup(feature.properties.url + "<br>" + feature.properties.Name, popupOptions);
+    }
+}
+var geoJsonFeature = {
+	"type": "FeatureCollection",
   "features": [
     {"type": "Feature",
       "properties": {
