@@ -204,7 +204,7 @@ function onEachFeature(feature, layer) {
 		)
 			.addLayer(CartoDBa)
 			.setView([39.955486, -75.180056], 13)
-			L.geoJson(geoJsonAL, {
+			L.geoJson(geojson, {
 				 onEachFeature: onEachFeature
 			}).addTo(map);
    
