@@ -33,16 +33,14 @@ var map = L.map('map', {
 });
  basemap.addTo(map);
  
-
-
-function onEachFeature(feature, layer) {
+ function onEachFeature(feature, layer) {
        popupOptions = {maxWidth: 150};
         if (feature.properties && feature.properties.Name) {
         layer.bindPopup(feature.properties.url + "<br>" + feature.properties.Name, popupOptions);
     }
 }
-		
-  var geoJsonFeature = [
+
+	var geoJsonFeature = [
   {
  "type": "FeatureCollection",
   "features": [
@@ -200,7 +198,10 @@ function onEachFeature(feature, layer) {
           39.9281211
         ]
       }
-    },
+    }
+  ]
+}
+  ];
     	L.geoJson(geojsonFeature, {
 				 onEachFeature: onEachFeature
 			}).addTo(map);
