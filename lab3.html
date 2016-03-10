@@ -21,17 +21,17 @@
 	<div id="map"></div>
 	
         <script>
-       var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+       var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
   
 });
  
-var basemap = L.map('map', {
+var map = L.map('map', {
   scrollWheelZoom: true,
   center: [39.9526536,-75.1744451],
   zoom: 12
 });
- basemap.addTo(map);
+ map.addLayer(layer);
  
  function onEachFeature(feature, layer) {
        popupOptions = {maxWidth: 150};
