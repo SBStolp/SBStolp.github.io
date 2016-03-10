@@ -33,7 +33,7 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
-			L.geojson(geojson, {
+			L.geoJson(geojson, {
 				 onEachFeature: onEachFeature
 			}).addTo(map);
    
