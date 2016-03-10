@@ -33,10 +33,7 @@ var map = L.map('map', {
   zoom: 12
 });
  basemap.addTo(map);
-			L.geoJson(geojson, {
-				 onEachFeature: onEachFeature
-			}).addTo(map);
-   
+		
 
 
 function onEachFeature(feature, layer) {
@@ -46,7 +43,7 @@ function onEachFeature(feature, layer) {
     }
 }
 		
-  var geojson = [
+  var geojsonFeature = [
   {
  "type": "FeatureCollection",
   "features": [
@@ -205,6 +202,9 @@ function onEachFeature(feature, layer) {
         ]
       }
     },
+    	L.geoJson(geojsonFeature, {
+				 onEachFeature: onEachFeature
+			}).addTo(map);
     
    
     
