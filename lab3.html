@@ -22,6 +22,24 @@ body{ background-color:#D2691E
 
 
 <script>
+var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+ 		     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'});
+ 
+		var map = L.map('map', {
+			maxZoom: 15,
+			minZoom: 10,
+			maxBounds: [
+				[39, -75.2],
+				[40, -75.1]
+				]
+		}
+		)
+			.addLayer(basemap)
+			.setView([39.955486, -75.180056], 13)
+			L.geojson(geojson, {
+				 onEachFeature: onEachFeature
+			}).addTo(map);
+   
 
 
 function onEachFeature(feature, layer) {
@@ -191,23 +209,6 @@ function onEachFeature(feature, layer) {
       }
     },
     
-    var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
- 		     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>'});
- 
-		var map = L.map('map', {
-			maxZoom: 15,
-			minZoom: 10,
-			maxBounds: [
-				[39, -75.2],
-				[40, -75.1]
-				]
-		}
-		)
-			.addLayer(basemap)
-			.setView([39.955486, -75.180056], 13)
-			L.geojson(geojson, {
-				 onEachFeature: onEachFeature
-			}).addTo(map);
    
     
   </script>
