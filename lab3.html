@@ -177,38 +177,6 @@ var geoJsonFeature = [
   ]
 }
   ];
-  function style(feature) {
-    return {
-        color: '#06406F',
-        opacity: 1,
-        fillColor: '#DDDDFF',
-        fillOpacity: 0.9,
-        weight: 3,
-        radius: 6,
-        clickable: true
-    }
-}
-
-for (var i = 0; i < result.length; i++) {
-    var json_features = {
-        type: "Feature",
-        style: style,
-        properties: result[i],
-        geometry: {
-            type: "Point",
-            coordinates: [
-                result[i].longitude, result[i].latitude
-            ]
-        }
-    };
-    json_data.features.push(json_features);
-};
-$scope.geojson = {
-    data: json_data,
-    pointToLayer: function(feature, latlng) {
-        return new L.circleMarker(latlng, style)
-    }
-};
  
  
  L.geoJson(geoJsonFeature, {
