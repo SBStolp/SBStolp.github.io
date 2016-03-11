@@ -17,15 +17,7 @@
     text-align:center;
     padding:5px;
 }
-#nav {
-    ine-height:20px;
-      width:100px;
-      height:100%;
-     position:absolute;
-     float:left;
-     position:center;
-      padding:5px; 
-  }
+
 #footer {
     background-color:white;
     color:white;
@@ -63,12 +55,9 @@
 	<center><div id="map" style="width: 800px; height: 400px; border: 3.5px solid #000000;margin:10px"></div></center>
 	<div id="map"></div>
 	
-	<div id="nav">
-London<br>
-Paris<br>
-Tokyo
-</div>
-	<div id="footer">WebGIS Spring 2016 @ This Institution</div>
+
+	<div id="footer">
+		<p>WebGIS Spring 2016 @ This Institution</p></div>
         <script>
        var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
