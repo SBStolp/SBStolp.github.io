@@ -32,14 +32,6 @@ var map = L.map('map', {
 })
 map.addLayer(layer);
 
-geojsonLayer = L.geoJson(geoJsonFeature, {
-    style: function(feature) {
-        return {color: feature.properties.markerColor};
-    },
-    pointToLayer: function(feature, latlng) {
-        return new L.CircleMarker(latlng, {radius: 10, fillOpacity: 0.85});
-    },
-
 
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.Name) {
