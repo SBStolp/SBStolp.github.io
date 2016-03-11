@@ -39,15 +39,7 @@ function onEachFeature(feature, layer) {
         layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img + "<br>" + feature.properties.Address);
     }
 }
-var geoJson = L.geoJson(geoJsonFeature, {
-    pointToLayer: function(feature, latlng) {
-        return L.circleMarker(latlng, {
-            radius: feature.properties.radius,
-            fillColor: '#bada55',
-            fillOpacity: .8
-        })
-    }
-});
+
 var geoJsonFeature = [
 	{"type": "FeatureCollection",
   "features": [
@@ -176,9 +168,16 @@ var geoJsonFeature = [
 }
   ];
  
-  L.geoJson(geoJsonFeature, {
-				 onEachFeature: onEachFeature
-			}).addTo(map);
+ var geoJson = L.geoJson(data, {
+    pointToLayer: function(feature, latlng) {
+        return L.circleMarker(latlng, {
+            radius: feature.properties.radius,
+            fillColor: '#bada55',
+            fillOpacity: .8
+        })
+    },
+    onEachFeature: onEachFeature    
+});
     
     
     </script>
