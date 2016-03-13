@@ -48,8 +48,12 @@
  
 var map = L.map('map', {
   scrollWheelZoom: true,
-  center: [39.951557, -75.151643],
   zoom: 12,
+  maxBounds: [
+				[39.88, -75.24],
+				[40.04, -75.08]
+				]
+		}).fitBounds([[39.8542247612,-75.3483823147],[40.1508598556,-74.8898240997]]).setView([39.951557, -75.151643], 13);
 })
 map.addLayer(layer);
 function onEachFeature(feature, layer) {
