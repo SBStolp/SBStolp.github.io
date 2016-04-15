@@ -25,11 +25,10 @@ body {
  var layer = new L.StamenTileLayer("toner");
  var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; 
  var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
-
-L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg', 
+ L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg', 
  {   
 	attribution: 'Map tiles <a href="http://maps.stamen.com/">Stamen Design</a>, Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>', 
-	maxZoom: 19,
+	maxZoom: 12,
 	minZoom: 7 
  }
  ).addTo(map); 
