@@ -1,0 +1,33 @@
+<html>
+<head>  
+<title>Cemetaries of Savannah</title>  
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>  
+<link rel="stylesheet" href="Leaflet.Instagram/dist/Leaflet.Instagram.css"/>  
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
+
+<style>   
+body {
+    background-image: url("http://backpackersverse.s3.amazonaws.com/wp-content/uploads/2015/10/23195548/10-Georgia-Bonaventure-Cemetery-Savannah-Haunted-Hiking-Trails-50-States.jpg");
+}
+</style>
+</head>
+<body> 
+<center><h><i><font size= "16" color="white">GOBBLINS,GHOULS & INSTAGRAM FOOLS IN SAVANNAH</i></h1></center>
+
+  
+<div id='map' style="height:500px; width:600px; border:2.5px solid #000000;"> 
+
+ <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
+ <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
+ <script> var map = L.map('map').setView([32.0723954,-81.0954587], 16); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
+ var Stamen_Toner = L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.{ext}', {
+	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+	subdomains: 'abcd',
+	minZoom: 0,
+	maxZoom: 20,
+	ext: 'png'
+});).addTo(map); L.instagram(url).addTo(map); 
+ </script>
+ </body>
+ </html>
