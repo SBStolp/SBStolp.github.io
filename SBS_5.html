@@ -21,10 +21,11 @@ body {
 
  <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
  <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
- <script> var map = L.map('map').setView([32.0723954,-81.0954587], 16); 
+ <script> var map = L.map('map').setView([32.0723954,-81.0954587], 16);  
+ var layer = new L.StamenTileLayer("toner");
  var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; 
  var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
- var layer = new L.StamenTileLayer("toner");
+
 L.tileLayer('http://tile.stamen.com/terrain/{z}/{x}/{y}.jpg', 
  {   
 	attribution: 'Map tiles <a href="http://maps.stamen.com/">Stamen Design</a>, Data by <a href="http://openstreetmap.org/">OpenStreetMap</a>', 
