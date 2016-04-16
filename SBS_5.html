@@ -22,7 +22,10 @@ body {
  <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
  <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
  
- <script> var map = L.map('map').setView([32.0723954,-81.0954587], 14); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
+ <script> var map = L.map('map').setView([32.0723954,-81.0954587], 14); 
+ var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; 
+ var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
+ 
  var geojsonMarkerOptions = {
 		    radius: 5,
 		    fillColor: "#ff7800",
@@ -30,7 +33,8 @@ body {
 		    weight: 1,
 		    opacity: 1,
 		    fillOpacity: 0.8
-		},
+		}
+		
 var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		
@@ -47,7 +51,7 @@ var geoJsonFeature = [
   "features": [
     {"type": "Feature",
       "properties": {
-        "Name": "<b>Lincoln Memorial Cemetary</b>",
+      	"Name": "<b>Lincoln Memorial Cemetary</b>",
         "img": "<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsMP_jnYk4LmRsU7ZPsqQ73gL_sXliOlEXb-dg2-8pdQurI2KZ' height=200 width=200/>",
         "markerColor": "#00FF57"
        },
@@ -58,7 +62,7 @@ var geoJsonFeature = [
     },
     {"type": "Feature",
       "properties": {
-        "Name": "<b>Colonial Park Cemetary</b>",
+      	"Name": "<b>Colonial Park Cemetary</b>",
         "img": "<img src='http://i0.wp.com/ghostsnghouls.com/wp-content/uploads/2014/04/creepy_ghost_woman.jpg' height=200 width=200 />",
         "markerColor": "#00FF57"
        },
@@ -69,7 +73,7 @@ var geoJsonFeature = [
     },
      {"type": "Feature",
       "properties": { 
-        "Name": "<b>Laurel Grove Cemetary</b>",
+      	"Name": "<b>Laurel Grove Cemetary</b>",
         "img": "<img src='http://2.bp.blogspot.com/-MLcskbghJsc/Um-8H4S0LrI/AAAAAAAAB2o/EhZg1vKFDFs/s1600/the+masters+sun+episode+1+halmoni+ghost.png' height=200 width=200/>",
         "markerColor": "#00FF57"
         },
