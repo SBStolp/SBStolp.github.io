@@ -21,6 +21,8 @@ body {
 
  <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
  <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
+ 
+ <script> var map = L.map('map').setView([32.0723954,-81.0954587], 14); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
  var geojsonMarkerOptions = {
 		    radius: 5,
 		    fillColor: "#ff7800",
@@ -29,7 +31,6 @@ body {
 		    opacity: 1,
 		    fillOpacity: 0.8
 		}
- <script> var map = L.map('map').setView([32.0723954,-81.0954587], 14); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=32.0723954&lng=-81.0954587&access_token="+at;
 var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		
