@@ -25,6 +25,53 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		
 	}).addTo(map);L.instagram(url).addTo(map); 
+	map.addLayer(layer);
+function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties.Name) {
+        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img);
+    }
+}
+var geoJsonFeature = [
+	{"type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "Name": "<b>Lincoln Memorial Cemetary</b>",
+        "img": "<img src='https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSsMP_jnYk4LmRsU7ZPsqQ73gL_sXliOlEXb-dg2-8pdQurI2KZ' height=120 width=120/>"
+       },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.0985065,32.0688658]
+      }
+    },
+    {"type": "Feature",
+      "properties": {
+        "Name": "<b>Laurel Grove Cemetary</b>",
+        "img": "<img src='http://i0.wp.com/ghostsnghouls.com/wp-content/uploads/2014/04/creepy_ghost_woman.jpg' height=120 width=120 />",
+       },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.0927287,32.0762097]
+      }
+    },
+     {"type": "Feature",
+      "properties": { 
+        "Name": "<b>Philadelphia Community Cats Council</b>",
+        "img": "<img src='http://volunteer.phila.gov/storage/users/611/2611/images/890/thumbs/organization_logo.jpg' height=120 width=120/>",
+       
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-81.1183539,32.060495]
+      }
+    }
+  ]
+}
+  ];
+ L.geoJson(geoJsonFeature, {
+  				 onEachFeature: onEachFeature
+  				 
+ }).addTo(map);
  </script>
  </body>
  </html>
