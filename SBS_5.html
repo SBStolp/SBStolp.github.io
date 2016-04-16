@@ -28,7 +28,7 @@ var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	map.addLayer(layer);
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.Name) {
-        layer.bindPopup(feature.properties.Name + + feature.properties.img);
+        layer.bindPopup(feature.properties.Name + <br> + feature.properties.img);
     }
 }
 var geoJsonFeature = [
