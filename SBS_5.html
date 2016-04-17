@@ -33,7 +33,7 @@ var layer = L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 	alert("Those who dare enter this site, BEWARE! Thy soul might forever be altered after peering into this realm of the otherworld; the kingdom of the dead!."); 
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.Name) {
-        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img,popupOptions);
+        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img);
     }
 }
 var geoJsonFeature = [
