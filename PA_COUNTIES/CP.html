@@ -88,7 +88,7 @@
 		}).addTo(map);
 
 
-		// control that shows state info on hover
+		// control that shows counties info on hover
 		var info = L.control();
 
 		info.onAdd = function (map) {
@@ -98,9 +98,9 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+			this._div.innerHTML = '<h4>Selected Attributey</h4>' +  (props ?
 				'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
-				: 'Hover over a state');
+				: 'Hover over a counties');
 		};
 
 		info.addTo(map);
@@ -125,22 +125,7 @@
 		L.control.layers(baseMaps, overlays).addTo(map);
 
 		
-		// shows state info on hover
-		var info = L.control();
 	
-		info.onAdd = function (map) {
-			this._div = L.DomUtil.create('div', 'info');
-			this.update();
-			return this._div;
-		};
-	
-		info.update = function (props) {
-			this._div.innerHTML = '<h4>PA Poverty Rate</h4>' +  (props ?
-				'<b>' + props.NAME + '</b><br />' + props.POVRATE + ' percent '
-				: 'Hover over a county');
-		};
-	
-		info.addTo(map);
 		
 		// get color depending on poverty rate value
 		function getColor(d) {
