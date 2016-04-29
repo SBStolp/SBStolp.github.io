@@ -98,7 +98,7 @@
 		};
 
 		info.update = function (props) {
-			this._div.innerHTML = '<h4>Selected Attributey</h4>' +  (props ?
+			this._div.innerHTML = '<h4>Selected Attribute</h4>' +  (props ?
 				'<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
 				: 'Hover over a counties');
 		};
@@ -165,7 +165,7 @@
 			});
 		}
 
-		geojson = L.geoJson(statesData, {
+		geojson = L.geoJson(counties_id, {
 			style: style,
 			onEachFeature: onEachFeature
 		}).addTo(map);
